@@ -1,0 +1,70 @@
+/* Nav */
+
+.nav{
+	background-color: green;
+	width: 300px;
+}
+
+.active a{
+	color: #0088cc;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0px;
+	margin: 30px 0 0 0;	
+}
+nav li{
+	padding: 0px;
+	margin: 0 0 10px 0;	
+}
+
+/* Blog */
+
+.postdate{
+	font-style: italic;
+	color: #B2B2CA;
+}
+.archivesyears article{
+	margin: 0 0 27px 0;
+}
+.comments{
+	margin-top:40px; 
+}
+.comments-post img{
+	float: left;
+	padding: 0 10px 10px 0;
+}
+.comments-post{
+	display: block;
+}
+
+/* About */
+
+
+/* Media Queries */
+
+@media (max-width: 979px) and (min-width: 768px){
+	
+}
+
+@media (max-width: 767px){
+	nav li{
+	display: inline;
+	margin: 0 15px 20px 0;
+	}
+	nav{
+	margin: 30px 0 30px 0;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
