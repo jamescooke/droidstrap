@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <section class="span7 offset1">
+        <h3>- Latest Post</h3>
+
+        {% for article in articles_page.object_list %}
+            <h2>
+                <!-- <a href="{{ SITEURL }}/{{ article.url }}" rel='bookmark'>--> {{ article.title }}
+            </h1>
+            <p class="postdate">- Posted {{ article.locale_date }}</p>
+            <div class="article-content"> {{ article.content }} </div>
+            <p class="readmore"><a href="{{ SITEURL }}/{{ article.url }}" title="{{ article.date.isoformat() }}">- Read more</a></p>
+        {% endfor %}
+
+    </section>
+
+    {% include 'pagination.html' %}
+
+{% endblock content %}
