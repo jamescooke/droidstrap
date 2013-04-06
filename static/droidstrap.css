@@ -2,6 +2,16 @@ Body{
         padding-bottom: 50px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    color: inherit;
+    font-family: 'Droid Serif',serif;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Droid Sans', sans-serif;
+}
+
 /* Nav */
 
 .nav{
@@ -23,7 +33,7 @@ nav li{
         padding: 0px;
         margin: 0 0 10px 0;     
 }
-.fade{ 
+.fake{ 
         bottom:0; 
         left:0; 
         position:fixed; 
