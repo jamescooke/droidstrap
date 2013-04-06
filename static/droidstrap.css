@@ -1,3 +1,7 @@
+Body{
+	padding-bottom: 50px;
+}
+
 /* Nav */
 
 .nav{
@@ -12,18 +16,50 @@
 nav ul{
 	list-style: none;
 	padding: 0px;
-	margin: 30px 0 0 0;	
+	margin: 30px 0 0 0;
+	font-family: 'Droid Serif', serif;
 }
 nav li{
 	padding: 0px;
 	margin: 0 0 10px 0;	
 }
+.fade{ 
+	bottom:0; 
+	left:0; 
+	position:fixed; 
+	top:0; 
+	width:32.755%; 
+	background:#f6f6f6;
+	z-index: -1;
+}
+
+#profileimg{
+	border-radius: 50px;
+	-webkit-border-radius: 50px;
+	-moz-border-radius: 50px;
+	margin-right: 10px;
+	width: 100px;
+	height: 100px;
+}
+.blogtitle{
+	font-size: 18px;
+}
+/* Footer */
+footer{
+	margin:40px 0px 20px 0px;
+}
 
 /* Blog */
-
+p a{
+	color:#0088cc;
+}
+p a:hover{
+	text-decoration: underline;
+}
 .postdate{
 	font-style: italic;
 	color: #B2B2CA;
+	font-family: 'Droid Serif', serif;
 }
 .archivesyears article{
 	margin: 0 0 27px 0;
@@ -38,14 +74,38 @@ nav li{
 .comments-post{
 	display: block;
 }
+.readmore{
+	font-family: 'Droid Serif', serif;
+}
 
 /* About */
 
+aside ul{
+	list-style: none;
+	padding: 0px;
+	margin: 0px;	
+}
+aside li{
+	padding: 0px;
+	margin: 0 0 10px 0;	
+}
 
 /* Media Queries */
 
-@media (max-width: 979px) and (min-width: 768px){
+@media (min-width: 980px){
 	
+}
+
+
+@media (max-width: 979px) and (min-width: 768px){
+#profileimg{
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	margin-right: 10px;
+	width: 48px;
+	height: 48px;
+}
 }
 
 @media (max-width: 767px){
@@ -56,11 +116,45 @@ nav li{
 	nav{
 	margin: 30px 0 30px 0;
 	}
+	.fade{ 
+	right:0; 
+	left:0; 
+	position:absolute; 
+	top:0; 
+	height:130px;
+	width:100%; 
+	background:#f6f6f6;
+	z-index: -1;
+}
+#profileimg{
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	margin-right: 10px;
+	width: 48px;
+	height: 48px;
+}
 }
 
+	
+  @media screen and (min-width:1350px) {
+   
+    div.fade              { width:37.75%; }
+  }
 
+  
+  @media screen and (min-width:1700px) {
+    
+    div.fade              { width:40.25%; }
+  }
 
+  
+  @media screen and (min-width:2000px) {
+    
+    div.fade              { width:42.85%; }
+  }
 
+ 
 
 
 
