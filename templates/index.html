@@ -9,7 +9,7 @@
                 <!-- <a href="{{ SITEURL }}/{{ article.url }}" rel='bookmark'>--> {{ article.title }}
             </h1>
             <p class="postdate">- Posted {{ article.locale_date }}</p>
-            <div class="article-content"> {{ article.content }} </div>
+            <div class="article-excerpt"> {{ article.summary }} </div>
             <p class="readmore"><a href="{{ SITEURL }}/{{ article.url }}" title="{{ article.date.isoformat() }}">- Read more</a></p>
         {% endfor %}
 
