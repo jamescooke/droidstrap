@@ -2,11 +2,10 @@
 
 {% block content %}
     <section class="span7 offset1">
-        <h3>- Latest posts</h3>
 
         {% for article in articles_page.object_list %}
             <h2 class="space-above">
-                <!-- <a href="{{ SITEURL }}/{{ article.url }}" rel='bookmark'>--> {{ article.title }}
+                <a href="{{ SITEURL }}/{{ article.url }}" rel='bookmark'>{{ article.title }}</a>
             </h2>
             <p class="postdate">- Posted {{ article.locale_date }}</p>
             <div class="article-excerpt"> {{ article.summary }} </div>
