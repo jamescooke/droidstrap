@@ -2,19 +2,18 @@
 
 {% block content %}
     <section class="span7 offset1">
-        <h3>- Latest post</h3>
+        <h3>- Latest posts</h3>
 
         {% for article in articles_page.object_list %}
-            <h2>
+            <h2 class="space-above">
                 <!-- <a href="{{ SITEURL }}/{{ article.url }}" rel='bookmark'>--> {{ article.title }}
-            </h1>
+            </h2>
             <p class="postdate">- Posted {{ article.locale_date }}</p>
             <div class="article-excerpt"> {{ article.summary }} </div>
             <p class="readmore"><a href="{{ SITEURL }}/{{ article.url }}" title="{{ article.date.isoformat() }}">- Read more</a></p>
         {% endfor %}
 
+        {% include 'pagination.html' %}
     </section>
-
-    {% include 'pagination.html' %}
 
 {% endblock content %}

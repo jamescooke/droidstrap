@@ -1,27 +1,26 @@
 {% if DEFAULT_PAGINATION %}
 <p class="paginator">
-	{% if articles_page.has_previous() %}
-                {% if page_name == "index" %}
-                    {% if articles_page.previous_page_number() == 1 %}
-			<a href="{{ SITEURL }}/{{ page_name }}.html" class="button_accent">&larr;&nbsp;&nbsp;&nbsp;newer</a>
-		    {% else %}
-		        <a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.previous_page_number() }}.html" class="button_accent">&larr;&nbsp;&nbsp;&nbsp;newer</a>
-		    {% endif %}
-                 {% else %}
-                    {% if articles_page.previous_page_number() == 1 %}
-			<a href="{{ SITEURL }}/{{ page_name }}/index.html" class="button_accent">&larr;&nbsp;&nbsp;&nbsp;newer</a>
-		    {% else %}
-		        <a href="{{ SITEURL }}/{{ page_name }}/index{{ articles_page.previous_page_number() }}.html" class="button_accent">&larr;&nbsp;&nbsp;&nbsp;newer</a>
-		    {% endif %}
-                 {% endif %}
-
-	{% endif %}
-	{% if articles_page.has_next() %}
-                {% if page_name == "index" %}
-                    <a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html" class="button_accent" style="position: absolute; right: 0;">continue&nbsp;&nbsp;&nbsp;&rarr;</a>
-                {% else %}
-                    <a href="{{ SITEURL }}/{{ page_name }}/index{{ articles_page.next_page_number() }}.html" class="button_accent" style="position: absolute; right: 0;">continue&nbsp;&nbsp;&nbsp;&rarr;</a>
-                {% endif %}
-	{% endif %}
+    {% if articles_page.has_previous() %}
+        {% if page_name == "index" %}
+            {% if articles_page.previous_page_number() == 1 %}
+                <a href="{{ SITEURL }}/{{ page_name }}.html">
+            {% else %}
+                <a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.previous_page_number() }}.html">
+            {% endif %}
+        {% else %}
+            {% if articles_page.previous_page_number() == 1 %}
+                <a href="{{ SITEURL }}/{{ page_name }}/index.html">
+            {% else %}
+                <a href="{{ SITEURL }}/{{ page_name }}/index{{ articles_page.previous_page_number() }}.html">
+            {% endif %}
+        {% endif %}&larr;&nbsp;Newer posts</a>
+    {% endif %}
+    {% if articles_page.has_next() %}
+        {% if page_name == "index" %}
+            <a href="{{ SITEURL }}/{{ page_name }}{{ articles_page.next_page_number() }}.html">
+        {% else %}
+            <a href="{{ SITEURL }}/{{ page_name }}/index{{ articles_page.next_page_number() }}.html">
+        {% endif %}Older posts&nbsp;&rarr;</a>
+    {% endif %}
 </p>
 {% endif %}
