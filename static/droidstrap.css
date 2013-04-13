@@ -2,6 +2,10 @@ body {
         padding-bottom: 50px;
 }
 
+div.container {
+    margin-top:1em;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: inherit;
     font-family: 'Droid Serif',serif;
@@ -41,13 +45,13 @@ nav li {
         padding: 0px;
         margin: 0 0 10px 0;
 }
-.fake {
-        bottom:0;
-        left:0;
-        position:fixed;
-        top:0;
-        width:32.755%;
-        background:#f6f6f6;
+div.fake {
+        bottom: 0;
+        left: 0;
+        position: fixed;
+        top: 0;
+        width: 32.755%;
+        background: #f6f6f6;
         z-index: -1;
 }
 #profileimg {
@@ -129,18 +133,18 @@ aside li {
     nav li {
         display: inline;
         margin: 0 15px 20px 0;
-        }
-        nav{
+    }
+    nav {
         margin: 30px 0 30px 0;
-        }
-        .fade{ 
-        right:0; 
-        left:0; 
-        position:absolute; 
-        top:0; 
-        height:130px;
-        width:100%; 
-        background:#f6f6f6;
+    }
+    div.fake{ 
+        right: 0;
+        left: 0;
+        position: absolute;
+        top: 0;
+        height: 130px;
+        width: 100%; 
+        background: #f6f6f6;
         z-index: -1;
     }
     #profileimg {
@@ -155,21 +159,21 @@ aside li {
 
 @media screen and (min-width:1350px)
 {
-    div.fade {
+    div.fake {
         width:37.75%;
     }
 }
 
 @media screen and (min-width:1700px)
 {
-    div.fade {
+    div.fake {
         width:40.25%;
     }
 }
 
 @media screen and (min-width:2000px)
 {
-    div.fade {
+    div.fake {
         width:42.85%;
     }
 }

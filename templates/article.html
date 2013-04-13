@@ -2,8 +2,29 @@
 
 {% block content %}
     <section class="span7 offset1">
-    <h1>hi</h1>
-
+        <article class="blogpost">
+            <header>
+                <h2>{{article.title}}</h2>
+                <p class="postdate" title="{{article.date.isoformat()}}">- Posted {{article.locale_date}}</p>
+            </header>
+        </article>
+        <div class='article-content'>{{article.content}}</div>
+        {% if DISQUS_SITENAME %}
+            <div id="comments">
+                <h2>Comments</h2>
+                <div id="disqus_thread"></div>
+                <script type="text/javascript">
+                    var disqus_identifier = "{{article.url}}";
+                    (function() {
+                        var dsq = document.createElement('script');
+                        dsq.type = 'text/javascript';
+                        dsq.async = true;
+                        dsq.src = 'http://{{DISQUS_SITENAME}}.disqus.com/embed.js';
+                        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view <a href="http://disqus.com/?ref_noscript">comments</a>.</noscript>
+            </div>
+        {% endif %} 
     </section>
-
 {% endblock content %}
