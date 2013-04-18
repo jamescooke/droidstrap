@@ -2,10 +2,6 @@ body {
         padding-bottom: 50px;
 }
 
-div.container {
-    margin-top:1em;
-}
-
 h1, h2, h3, h4, h5, h6 {
     color: inherit;
     font-family: 'Droid Serif',serif;
@@ -23,6 +19,11 @@ h2.space-above {
 
 p {
     font-family: 'Droid Sans', sans-serif;
+}
+
+cite {
+    background: #eeeeee;
+    font-family: 'Droid Sans Mono', Monaco, Menlo, Consolas, 'Courier New', monospace;
 }
 
 /* Nav */

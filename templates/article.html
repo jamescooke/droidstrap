@@ -1,10 +1,12 @@
 {% extends "base.html" %}
 
+{% block title %}{{article.title}} // {{ super() }}{% endblock title %}
+
 {% block content %}
-    <section class="span7 offset1">
+    <section class="span7 offset1 content">
         <article class="blogpost">
             <header>
-                <h2>{{article.title}}</h2>
+                <h2 class="space-above">{{article.title}}</h2>
                 <p class="postdate" title="{{article.date.isoformat()}}">- Posted {{article.locale_date}}</p>
             </header>
         </article>
