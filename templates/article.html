@@ -6,14 +6,17 @@
     <section class="span7 offset1 content">
         <article class="blogpost">
             <header>
-                <h2 class="space-above">{{article.title}}</h2>
+                <h1>{{article.title}}</h1>
                 <p class="postdate" title="{{article.date.isoformat()}}">- Posted {{article.locale_date}}</p>
             </header>
+            <div class='article-content'>
+                {{article.content}}
+            </div>
         </article>
-        <div class='article-content'>{{article.content}}</div>
+
         {% if DISQUS_SITENAME %}
             <div id="comments">
-                <h2>Comments</h2>
+                <h2 class="space-above">Comments</h2>
                 <div id="disqus_thread"></div>
                 <script type="text/javascript">
                     var disqus_identifier = "{{article.url}}";

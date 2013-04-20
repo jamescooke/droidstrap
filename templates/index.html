@@ -4,12 +4,17 @@
     <section class="span7 offset1">
 
         {% for article in articles_page.object_list %}
-            <h2 class="space-above">
-                <a href="{{ SITEURL }}/{{ article.url }}" rel='bookmark'>{{ article.title }}</a>
-            </h2>
-            <p class="postdate">- Posted {{ article.locale_date }}</p>
-            <div class="article-excerpt"> {{ article.summary }} </div>
-            <p class="readmore"><a href="{{ SITEURL }}/{{ article.url }}" title="{{ article.date.isoformat() }}">- Read more</a></p>
+            <div class="row">
+                <div class="span1">
+                    <p class="postdate">{{ article.locale_date }}</p>
+                </div>
+                <div class="span4">
+                    <h2 class="small">
+                        <a href="{{ SITEURL }}/{{ article.url }}" rel='bookmark'>{{ article.title }}</a>
+                    </h2>
+                    <div class="article-excerpt"> {{ article.summary }} </div>
+                </div>
+            </div>
         {% endfor %}
 
         {% include 'pagination.html' %}

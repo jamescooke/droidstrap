@@ -8,9 +8,14 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: 400;
 }
 
+header h1 {
+    line-height: 1.4em;
+}
 
-h2 a {
-    color: #333;
+h2.small {
+    font-size: 1.3em;
+    line-height: 1.4em;
+    margin-bottom: 0;
 }
 
 h2.space-above {
@@ -79,9 +84,10 @@ p a:hover {
         text-decoration: underline;
 }
 .postdate {
-        font-style: italic;
-        color: #B2B2CA;
-        font-family: 'Droid Serif', serif;
+    margin-top: 1em;
+    font-style: italic;
+    color: #B2B2CA;
+    font-family: 'Droid Serif', serif;
 }
 .archivesyears article {
         margin: 0 0 27px 0;
