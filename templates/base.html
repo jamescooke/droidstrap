@@ -56,8 +56,16 @@
                     </nav>
                 </header>
 
-        {% block content %}
-        {% endblock %}
+                {% block content %}
+                {% endblock %}
+
+            </div>
+            <div class="row">
+                <footer class="offset4 span7">
+                    <p>&copy; {{ SITENAME }}</p>
+                    <p>Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_GB">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>
+                </footer>
+        </div>
 
         {% include 'analytics.html' %}
     </body>

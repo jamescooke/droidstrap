@@ -1,30 +1,38 @@
 {% extends "base.html" %}
 
-{% block title %}{{article.title}} // {{ super() }}{% endblock title %}
+{% block title %}{{ article.title }} // {{ super() }}{% endblock title %}
 
 {% block content %}
     <section class="span7 offset1 content">
         <article class="blogpost">
             <header>
-                <h1>{{article.title}}</h1>
-                <p class="postdate" title="{{article.date.isoformat()}}">- Posted {{article.locale_date}}</p>
+                <h1>{{ article.title }}</h1>
+                <p class="postdate" title="{{ article.date.isoformat() }}">- Posted {{ article.locale_date }}</p>
             </header>
             <div class='article-content'>
-                {{article.content}}
+                {{ article.content }}
             </div>
         </article>
+
+        <p class="article-meta">
+            &ndash;
+            Posted in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
+            with tags {% for tag in article.tags %}
+                <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+            {% endfor %}
+        </p>
 
         {% if DISQUS_SITENAME %}
             <div id="comments">
                 <h2 class="space-above">Comments</h2>
                 <div id="disqus_thread"></div>
                 <script type="text/javascript">
-                    var disqus_identifier = "{{article.url}}";
+                    var disqus_identifier = "{{ article.url }}";
                     (function() {
                         var dsq = document.createElement('script');
                         dsq.type = 'text/javascript';
                         dsq.async = true;
-                        dsq.src = 'http://{{DISQUS_SITENAME}}.disqus.com/embed.js';
+                        dsq.src = 'http://{{ DISQUS_SITENAME }}.disqus.com/embed.js';
                         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
                     })();
                 </script>

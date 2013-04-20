@@ -3,6 +3,19 @@
 {% block content %}
     <section class="span7 offset1">
 
+        <h1>
+            {% block pagetitle %}
+                {% if not articles_page.has_previous() %}
+                    Latest posts
+                {% else %}
+                    Posts
+                {% endif %}
+            {% endblock pagetitle %}
+            {% if articles_page.has_previous() %}
+                &ndash; Page&nbsp;{{ articles_page.number }}
+            {% endif %}
+        </h1>
+
         {% for article in articles_page.object_list %}
             <div class="row">
                 <div class="span1">
@@ -18,6 +31,7 @@
         {% endfor %}
 
         {% include 'pagination.html' %}
+
     </section>
 
 {% endblock content %}
