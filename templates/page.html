@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }} // {{ super() }}{% endblock title %}
+
+{% block content %}
+    <section class="span7 offset1 content">
+        <article class="blogpost">
+            <header>
+                <h1>{{ page.title }}</h1>
+            </header>
+            <div class='article-content'>
+                {{ page.content }}
+            </div>
+        </article>
+    </section>
+{% endblock %}

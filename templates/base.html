@@ -45,12 +45,14 @@
                             {% endfor %}
                             {% if DISPLAY_PAGES_ON_MENU %}
                                 {% for p in PAGES %}
-                                        <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
+                                    <li{% if p == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ p.url }}">{{ p.title }}</a></li>
                                 {% endfor %}
                             {% else %}
-                                {% for cat, null in categories %}
+                                {% if DISPLAY_CATEGORIES_ON_MENU %}
+                                    {% for cat, null in categories %}
                                         <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-                                {% endfor %}
+                                    {% endfor %}
+                                {% endif %}
                             {% endif %}
                         </ul>
                     </nav>
@@ -62,7 +64,10 @@
             </div>
             <div class="row">
                 <footer class="offset4 span7">
-                    <p>&copy; {{ SITENAME }}</p>
+                    <p>&copy; {{ SITENAME }} &ndash;
+                        Built with <a href="https://github.com/jamescooke/droidstrap">Droidstrap theme</a>
+                        for <a href="http://blog.getpelican.com/">Pelican</a>
+                    </p>
                     <p>Licensed under <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_GB">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.</p>
                 </footer>
         </div>
