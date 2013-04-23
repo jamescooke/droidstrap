@@ -87,7 +87,11 @@ div.pagination-right {
 
 /* Footer */
 footer {
-        margin:40px 0px 20px 0px;
+        margin:100px 0px 20px 0px;
+}
+footer p{
+        color:#B2B2CA;
+        font:italic 12px/12px 'Droid Serif', serif;
 }
 
 /* Blog */
