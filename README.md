@@ -10,15 +10,15 @@ Has
 * Basic content listing - home, tag, category.
 * Single post and single page templates.
 * A touch of responsiveness.
+* Tag pages.
+* Category pages.
 
 
-Has not
--------
+Has not (yet)
+-------------
 
 * Author pages.
 * Multi language support.
-* Tags pages.
-* Categories pages.
 
 
 License & Contributors
