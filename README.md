@@ -19,6 +19,16 @@ Has not (yet)
 
 * Author pages.
 * Multi language support.
+* Handling of Pelican links setting.
+
+
+Settings
+--------
+
+We've stuck a few settings in to customise the theme.
+
+* `PROFILE_IMG_URL` - Set the image for the top circle cutout. (Has no default yet).
+* `TAGLINE` - Used for the page titles and some meta tags.
 
 
 License & Contributors
