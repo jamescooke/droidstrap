@@ -2,6 +2,8 @@
 
 {% block title %}{{ article.title }} // {{ super() }}{% endblock title %}
 
+{% block meta_description %}{{ article.title }}, {{ super() }}{% endblock meta_description %}
+
 {% block content %}
     <section class="span7 offset1 content">
         <article class="blogpost">
