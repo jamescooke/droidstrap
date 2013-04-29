@@ -3,6 +3,8 @@ Droidstrap
 
 A Pelican theme using bootstrap and Droid fonts.
 
+Example running on [jamescooke.info](http://jamescooke.info), [screenshot here](https://raw.github.com/jamescooke/droidstrap/master/screenshot.png).
+
 
 Has
 ---
