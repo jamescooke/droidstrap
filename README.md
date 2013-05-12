@@ -9,11 +9,15 @@ Example running on [jamescooke.info](http://jamescooke.info), [screenshot here](
 Has
 ---
 
+Theme is still in a very basic state. It has:
+
 * Basic content listing - home, tag, category.
 * Single post and single page templates.
 * A touch of responsiveness.
 * Tag pages.
 * Category pages.
+
+And some bugs! 
 
 
 Has not (yet)
@@ -22,6 +26,8 @@ Has not (yet)
 * Author pages.
 * Multi language support.
 * Handling of Pelican links setting.
+
+It's all open - contributions welcome, especially with HTML / CSS.
 
 
 Settings
