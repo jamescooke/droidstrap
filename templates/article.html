@@ -19,9 +19,11 @@
         <p class="article-meta">
             &ndash;
             Posted in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
-            with tags {% for tag in article.tags %}
-                <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
-            {% endfor %}
+            {% if article.tags %}
+                with tags {% for tag in article.tags %}
+                    <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+                {% endfor %}
+            {% endif %}
         </p>
 
         {% if DISQUS_SITENAME %}
