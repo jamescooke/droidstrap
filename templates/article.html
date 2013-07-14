@@ -1,8 +1,8 @@
 {% extends "base.html" %}
 
-{% block title %}{{ article.title }} // {{ super() }}{% endblock title %}
+{% block title %}{{ article.title|striptags }} // {{ super() }}{% endblock title %}
 
-{% block meta_description %}{{ article.title }}, {{ super() }}{% endblock meta_description %}
+{% block meta_description %}{{ article.title|striptags }}, {{ super() }}{% endblock meta_description %}
 
 {% block content %}
     <section class="span7 offset1 content">

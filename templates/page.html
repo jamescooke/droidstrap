@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 
-{% block title %}{{ page.title }} // {{ super() }}{% endblock title %}
+{% block title %}{{ page.title|striptags }} // {{ super() }}{% endblock title %}
 
 {% block content %}
     <section class="span7 offset1 content">
