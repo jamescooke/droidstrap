@@ -1,6 +1,7 @@
 body {
     font-size: 18px;
     line-height: 26px;
+    font-family: 'Droid Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -24,10 +25,6 @@ div.article-content h2 {
 }
 h2.space-above {
     margin-top:1em;
-}
-
-p {
-    font-family: 'Droid Sans', sans-serif;
 }
 
 li {
