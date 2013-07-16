@@ -1,3 +1,5 @@
+@import url("pygment.css");
+
 body {
     font-size: 18px;
     line-height: 26px;
@@ -134,6 +136,12 @@ aside ul {
 aside li {
         padding: 0px;
         margin: 0 0 10px 0;
+}
+
+/* Code */
+div.highlight pre {
+  background: #272822; /* override bootstrap styling */
+  color: #f8f8f2; /* override bootstrap styling */
 }
 
 /* Media Queries */
