@@ -16,6 +16,7 @@ Theme is still in a very basic state. It has:
 * A touch of responsiveness.
 * Tag pages.
 * Category pages.
+* Code highlighting with monokai.
 
 And some bugs! 
 
