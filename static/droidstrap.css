@@ -22,9 +22,6 @@ h2.small {
     margin-bottom: 0;
 }
 
-div.article-content h2 {
-    font-size: 1.7em;
-}
 h2.space-above {
     margin-top:1em;
 }
@@ -32,6 +29,7 @@ h2.space-above {
 li {
     line-height: 24px;
 }
+
 
 cite {
     background: #eeeeee;
@@ -103,6 +101,16 @@ p a {
 p a:hover {
         text-decoration: underline;
 }
+
+div.article-content h2 {
+    font-size: 1.7em;
+    margin-top: 1em;
+}
+
+div.article-content li {
+    margin-top: 0.5em;
+}
+
 .postdate {
     margin-top: 1em;
     font-style: italic;
