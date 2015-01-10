@@ -24,6 +24,11 @@
                     <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
                 {% endfor %}
             {% endif %}
+
+            {% if SHOW_SCM_LINKS and SCM_BASE_URL and article.scm_path %}
+                <br>
+                &ndash; <a href='{{ SCM_BASE_URL }}{{ article.scm_path }}'>{% if SCM_LINK_TEXT %}{{ SCM_LINK_TEXT }}{% else %}Article source{% endif %}</a>
+            {% endif %}
         </p>
 
         {% if DISQUS_SITENAME %}
