@@ -31,6 +31,17 @@
                 <br>
                 &ndash; <a href='{{ SCM_BASE_URL }}{{ article.scm_path }}'>{% if SCM_LINK_TEXT %}{{ SCM_LINK_TEXT }}{% else %}Article source{% endif %}</a>
             {% endif %}
+            {% if article.related_posts %}
+                <br>
+                &ndash; Further reading:
+                <ul>
+                {% for related_post in article.related_posts %}
+                    <li>
+                        <a href="{{ SITEURL }}/{{ related_post.url }}">{{ related_post.title }}</a>
+                        {{ related_post.summary }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
         </p>
 
         {% if DISQUS_SITENAME %}
