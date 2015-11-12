@@ -15,6 +15,7 @@ Theme is still in a very basic state. It has:
 * Tag pages.
 * Category pages.
 * Code highlighting with monokai.
+* Works with Pelican [related_posts plugin](https://github.com/getpelican/pelican-plugins/tree/master/related_posts).
 
 And some bugs! 
 
