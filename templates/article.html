@@ -20,8 +20,10 @@
             &ndash;
             Posted in <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
             {% if article.tags %}
-                with tags {% for tag in article.tags %}
-                    <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>
+                with
+                {% if article.tags|length > 1 %}tags{% else %}tag{% endif %}
+                {% for tag in article.tags %}
+                    <a href="{{ SITEURL }}/{{ tag.url }}">{{ tag }}</a>{% if not loop.last %}, {% endif %}
                 {% endfor %}
             {% endif %}
 
