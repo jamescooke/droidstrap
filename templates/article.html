@@ -2,7 +2,7 @@
 
 {% block title %}{{ article.title|striptags }} // {{ super() }}{% endblock title %}
 
-{% block meta_description %}{{ article.title|striptags }}, {{ super() }}{% endblock meta_description %}
+{% block meta_description %}{{ article.summary|striptags }}{% endblock meta_description %}
 
 {% block content %}
     <section class="span7 offset1 content">
