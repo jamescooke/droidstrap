@@ -30,8 +30,7 @@ li {
     line-height: 24px;
 }
 
-
-cite {
+cite, tt.literal {
     background: #eeeeee;
     font-family: 'Droid Sans Mono', Monaco, Menlo, Consolas, 'Courier New', monospace;
 }
