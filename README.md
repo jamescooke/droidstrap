@@ -45,7 +45,7 @@ example, on GitHub. Update the following settings to enable this feature:
 
 * `SHOW_SCM_LINKS` - Set to `True` to turn on article source links.
 * `SCM_BASE_URL` - Set as the public URL of your blog's source tree. E.g.
-  'https://github.com/jamescooke/blog/tree/master/'
+  'https://github.com/jamescooke/blog/blob/master/'
 * `SCM_LINK_TEXT` - Optional, set a text to be used for article source links.
   Defaults to 'Article source'.
 
