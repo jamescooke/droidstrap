@@ -2,7 +2,7 @@
 
 A Pelican theme using Bootstrap 2 and Droid fonts.
 
-Example running on [jamescooke.info](http://jamescooke.info), [screenshot here](https://raw.github.com/jamescooke/droidstrap/master/screenshot.png).
+Example running on [jamescooke.info](https://jamescooke.info/), [screenshot here](https://raw.github.com/jamescooke/droidstrap/master/screenshot.png).
 
 ## Features
 
@@ -51,7 +51,7 @@ example, on GitHub. Update the following settings to enable this feature:
 
 Plus for each article that source should be shown a `scm_path` property should be
 added to the [article
-metadata](http://docs.getpelican.com/en/3.5.0/content.html#file-metadata). This
+metadata](https://docs.getpelican.com/en/3.5.0/content.html#file-metadata). This
 should be the name of the file in the repository relative to the
 `SCM_BASE_URL`.
 
