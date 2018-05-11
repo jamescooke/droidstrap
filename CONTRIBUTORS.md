@@ -1,8 +1,8 @@
 Contributors
 ============
 
-James Cooke ([jamescooke](/jamescooke))
+James Cooke ([jamescooke](https://github.com/jamescooke/))
 
-Paul Richardson ([thesocialspaces](/thesocialspaces))
+Paul Richardson ([thesocialspaces](https://github.com/thesocialspaces/))
 
-Jon Staley ([jmstaley](/jmstaley))
+Jon Staley ([jmstaley](https://github.com/jmstaley/))
