@@ -9,7 +9,7 @@
         <article class="blogpost">
             <header>
                 <h1>{{ article.title }}</h1>
-                <p class="postdate" title="{{ article.date.isoformat() }}">- Posted {{ article.locale_date }}</p>
+                <p class="postdate" title="{{ article.date.isoformat() }}">- Posted {{ article.locale_date }}{% if article.modified %}<br />- Modified {{ article.modified|strftime('%B %d %Y')}}{% endif %}</p>
             </header>
             <div class='article-content'>
                 {{ article.content }}
